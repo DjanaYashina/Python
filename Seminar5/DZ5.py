@@ -7,6 +7,8 @@
 
 
 # def power(base, exp):
+#     if exp == 0:
+#         return 1
 #     if exp == 1:
 #         return base
 #     if exp != 1:
@@ -27,6 +29,8 @@
 # 2 2
 # 4
 
+# if a < b:
+#    a, b = b, a
 # def sum(a, b):
 #     if b == 0:
 #         return a

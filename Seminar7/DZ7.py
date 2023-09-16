@@ -24,6 +24,28 @@
 # else:
 #     print('Пам парам')
 
+# вариант2
+# def count_vowels(words):
+#     for word in words:
+#         k = 0
+#         for letter in word:
+#             if letter in vowels_letter:
+#                 k += 1
+#         if word != words[0] and k != last_k:
+#             return 'Пам парам'
+#         last_k = k
+#     return 'Парам пам-пам'
+
+# text = input("Введите текст песни Винни-Пуха:")
+# vowels_letter = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+# words = text.split()
+# result = list()
+# last_k = 0
+
+# print(count_vowels(text))
+
+
+
 # Задача 36:
 # Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), которая принимает в качестве
 # аргумента функцию, вычисляющую элемент по номеру строки и столбца. Аргументы num_rows и num_columns указывают число
@@ -41,10 +63,13 @@
 # 6 12 18 24 30 36
 
 
-# def print_operation_table(operation, num_rows=6, num_columns=6):
+# def print_operation_table(operation, num_rows=6, num_columns=8):
 #     a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_rows + 1)]
+#     print(a)
 #     for i in a:
-#         print(*[f"{x:>3}" for x in i])
+#         print(*[f"{x:>5}" for x in i])
 
 
 # print_operation_table(lambda x, y: x * y)
+
+
